@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -A1 | sort -dfV | awk '{printf "%s/, ", $0}' | sed 's/,$/\n/'

@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | sort -dfV | awk '{printf "%s/, ", $0}' | sed 's/,$/\n/'
+ls -A1p | grep -v "/$" | tr '\n' ',' | sed 's/,$/\n/' | sed 's/,/, /g' | awk '{print "./, ../, " $0}'

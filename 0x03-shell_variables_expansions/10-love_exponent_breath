@@ -1,1 +1,2 @@
-git add . ; git commit -m “Divide, conquer, and rule the world of numbers 🌐” ; git push
+#!/bin/bash
+echo $(( BREATH**LOVE ))
